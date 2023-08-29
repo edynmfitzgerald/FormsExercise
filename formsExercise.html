@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Experience Survey</legend>
+            <label for="storeNumber">Store Number</label>
+            <input type="number" name="storenumber" id="storeNumber" value="3109">
+            <option hidden>Select a Store</option>
+            <fieldset>
+                <legend>When you visited:</legend>
+                <label for="dateVisited">Date Visited</label>
+                <input type="date" name="date">
+                <br>
+                <label for="time">Time</label>
+                <input type="time" name="time">
+            </fieldset>
+            <label for="fullName">Full Name:</label>
+            <input type="name" name="name" placeholder="Name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <fieldset>
+<legend>How would you rate your level of satisfaction with your visit?</legend>
+<input type="radio" name="satisfied" id="satisfied" value="satisfied">
+<label for="satisfied">Satisfied</label>
+<br>
+<input type="radio" name="neither" id="neither" value="neither">
+<label for="neither">Neither Satisfied or Dissatisfied</label>
+<br>
+<input type="radio" name="dissatisfied" id="dissatisfied" value="dissatisfied">
+<label for="dissatisfied">Dissatisfied</label>
+      </fieldset>
+      <label for="experience">Tell us about your experience:</label>
+      <br>
+      <textarea name="" id="" cols="20" rows="2"></textarea>
+      <br>
+      <label for="timesVisited">Times visited in the last month:</label>
+      <br>
+      <input type="text">
+      <br>
+      <input type="checkbox" name="checkbox" id="checkbox">
+      <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
+      <br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <input type="reset">
+      <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
