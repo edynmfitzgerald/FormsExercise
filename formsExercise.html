@@ -9,8 +9,13 @@
     <form>
         <fieldset>
             <legend>Customer Experience Survey</legend>
-            <label for="storeNumber">Store Number</label>
-           <input type="number" placeholder="Select a Store">
+            <label for="store">Store Number</label>
+           <select name="store" id="store">
+            <option value="selectstore" hidden>Select a Store</option>
+            <option value="3109">3109</option>
+            <option value="2421">2421</option>
+            <option value="5357">5357</option>
+           </select>
   <fieldset>
                 <legend>When you visited:</legend>
                 <label for="dateVisited">Date Visited</label>
