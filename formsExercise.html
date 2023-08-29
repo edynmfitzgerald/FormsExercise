@@ -10,9 +10,9 @@
         <fieldset>
             <legend>Customer Experience Survey</legend>
             <label for="storeNumber">Store Number</label>
+            <option hidden> Select A Store</option>
             <input type="number" name="storenumber" id="storeNumber" value="3109">
-            <option hidden>Select a Store</option>
-            <fieldset>
+ <fieldset>
                 <legend>When you visited:</legend>
                 <label for="dateVisited">Date Visited</label>
                 <input type="date" name="date">
@@ -48,7 +48,7 @@
       <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
       <br>
       <label for="password">Password</label>
-      <input type="password" name="password" id="password">
+      <input type="password" name="password" id="password" required>
       <br>
       <input type="reset">
       <input type="submit" value="Submit">
