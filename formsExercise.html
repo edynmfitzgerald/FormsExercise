@@ -31,13 +31,13 @@
             <input type="email" name="email" id="email" placeholder="Email">
             <fieldset>
 <legend>How would you rate your level of satisfaction with your visit?</legend>
-<input type="radio" name="satisfied" id="satisfied" value="satisfied">
+<input type="radio" name="visit" id="satisfied" value="satisfied">
 <label for="satisfied">Satisfied</label>
 <br>
-<input type="radio" name="neither" id="neither" value="neither">
+<input type="radio" name="visit" id="neither" value="neither">
 <label for="neither">Neither Satisfied or Dissatisfied</label>
 <br>
-<input type="radio" name="dissatisfied" id="dissatisfied" value="dissatisfied">
+<input type="radio" name="visit" id="dissatisfied" value="dissatisfied">
 <label for="dissatisfied">Dissatisfied</label>
       </fieldset>
       <label for="experience">Tell us about your experience:</label>
@@ -46,7 +46,8 @@
       <br>
       <label for="timesVisited">Times visited in the last month:</label>
       <br>
-      <input type="number" value="1-30">
+      <input type="number" min="1" max="30">
+      </select>
       <br>   
       <input type="checkbox" name="checkbox" id="checkbox">
       <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
