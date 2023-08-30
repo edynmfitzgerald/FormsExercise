@@ -19,7 +19,7 @@
   <fieldset>
                 <legend>When you visited:</legend>
                 <label for="dateVisited">Date Visited</label>
-                <input type="date" name="date">
+                <input type="date" name="date" min="2022-01-01" max="2022-12-31">
                 <br>
                 <label for="time">Time</label>
                 <input type="time" name="time">
@@ -34,7 +34,7 @@
 <input type="radio" name="visit" id="satisfied" value="satisfied">
 <label for="satisfied">Satisfied</label>
 <br>
-<input type="radio" name="visit" id="neither" value="neither">
+<input type="radio" name="visit" id="neither" value="neither" checked>
 <label for="neither">Neither Satisfied or Dissatisfied</label>
 <br>
 <input type="radio" name="visit" id="dissatisfied" value="dissatisfied">
@@ -49,11 +49,11 @@
       <input type="number" min="1" max="30">
       </select>
       <br>   
-      <input type="checkbox" name="checkbox" id="checkbox">
+      <input type="checkbox" name="checkbox" id="checkbox" required>
       <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
       <br>
       <label for="password">Password</label>
-      <input type="password" name="password" id="password" required>
+      <input type="password" name="password" id="password" minlength="5" maxlength="10" required>
       <br>
       <input type="reset">
       <input type="submit" value="Submit">
